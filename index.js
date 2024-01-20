@@ -14,7 +14,7 @@ const io = new Server(app)
 server.use(express.json());
 server.use(cors());
 server.get("/", (req, res) => {
-    res.status(200), json({
+    res.status(200).json({
         uname: "Jyoti",
         uphone: "0000000000",
     })
